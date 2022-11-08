@@ -1,15 +1,9 @@
-window.addEventListener('load', ()=>{
-    const form = document.querySelector('#form-app')
-    const btnAdd = document.querySelector("#btn-add")
-    const input = document.querySelector("#input-app")
-    const appsContainer = document.querySelector("#apps-container")
-    const nothingHere = document.querySelector("#nothing")
-    
-    
-    
-    
-    // nothingHere.classList.remove('hidden')
-    
+const form = document.querySelector('#form-app')
+const btnAdd = document.querySelector("#btn-add")
+const input = document.querySelector("#input-app")
+const appsContainer = document.querySelector("#apps-container")
+const nothingHere = document.querySelector("#nothing")
+// nothingHere.classList.remove('hidden')
     
 form.addEventListener('submit', (event)=>{
     event.preventDefault();
@@ -86,4 +80,3 @@ form.addEventListener('submit', (event)=>{
       
 })
     
-})

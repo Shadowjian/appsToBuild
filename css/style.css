@@ -13,7 +13,7 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-image: url(/assets/build.jpg);
+    background-image: url(../assets/build.jpg);
     background-position: center;
 }
 
