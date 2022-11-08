@@ -32,7 +32,7 @@ body {
     cursor:help;
 }
 
-#app-container {
+#main-container {
     position: relative;
     background-color: rgba(24,24,24,0.6);
     display: flex;
@@ -78,6 +78,7 @@ body {
 #apps-container {
     display: flex;
     width: 70%;
+    margin-top: 20px;
     min-width: 300px;
     flex-direction: column;
     padding: 5px;
@@ -120,7 +121,8 @@ body {
 
 #quote {
     position: absolute;
-    bottom: 50px;
+    color: orange;
+    bottom: 20px;
 }
 #hajime i{
     font-size: .5rem;
