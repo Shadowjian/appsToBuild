@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Patrick Hand', cursive;
+    color: white;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/assets/build.jpg);
+    background-position: center;
+}
+
+.btn {
+    border: none;
+    padding: 5px;
+    background-color: rgba(0,0,0,0);
+}
+.btn i:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+.btn-delete i:hover{
+    color: red;
+    cursor:help;
+}
+
+#app-container {
+    position: relative;
+    background-color: rgba(24,24,24,0.6);
+    display: flex;
+    width: 60vw;
+    min-height: 50vh;
+    min-width: 320px;
+    max-width: 744px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(24,24,24,0.6);
+    border: solid 1px blanchedalmond;
+}
+
+/* INPUT APP FORM */
+#form-app {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    padding: 5px;
+}
+
+#input-app {
+    border: 1px solid white;
+    flex: 6;
+    font-size: 1.2rem;
+    background-color: rgba(24,24,24,0.6);
+    outline: none;
+    padding: 5px;
+}
+
+.btn-add {
+    border: 1px solid;
+    flex: 1;
+    box-shadow: 1px 1px 2px gray;
+}
+.headers {
+    margin: 10px auto;
+}
+
+/* OUTPUT APPS */
+
+#apps-container {
+    display: flex;
+    width: 70%;
+    min-width: 300px;
+    flex-direction: column;
+    padding: 5px;
+    /* background-color: blanchedalmond; */
+    gap: 20px;
+}
+.app-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: space-between;
+    border-bottom: solid 1px rgb(209, 116, 10);
+
+}
+.app-container i{
+    font-size: 1.1rem;
+    
+}
+
+.the-app {
+    background-color: rgba(0,0,0,0);
+    font-size: 1.1rem;
+    outline: none;
+    flex: 1;
+    border: none;
+}
+
+.btn-actions {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#hajime {
+    position: absolute;
+    bottom: 10px;
+    align-self: end;
+    font-size: 0.6rem;
+    color: orange;
+}
+
+#quote {
+    position: absolute;
+    bottom: 50px;
+}
+#hajime i{
+    font-size: .5rem;
+}
+
+/* UTILITIES */
+.hidden {
+    display: none;
+    background-color: green;
+    border: solid 1px red;
+}
+
+.done {
+    cursor:pointer;
+}
+
+
