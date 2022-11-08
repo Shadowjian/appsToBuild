@@ -11,8 +11,8 @@ window.addEventListener('load', ()=>{
     // nothingHere.classList.remove('hidden')
     
     
-form.addEventListener('submit', ()=>{
-     
+form.addEventListener('submit', (event)=>{
+    event.preventDefault();
     nothingHere.classList.add('hidden')
     const appContainer = document.createElement('div')
         appContainer.classList.add("app-container")
