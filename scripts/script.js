@@ -87,7 +87,6 @@ form.addEventListener('submit', (event)=>{
         
         newAppBtnDelete.addEventListener('click', ()=>{
             appContainer.remove()
-
             console.log(appsCount)
         })
 
