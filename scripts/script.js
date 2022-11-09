@@ -4,12 +4,15 @@ const input = document.querySelector("#input-app")
 const nothingHere = document.querySelector("#nothing")
 const appsContainer = document.querySelector("#apps-container")
 
+const maxLimit = document.querySelector('#max-limit')
+const limit = 5
+maxLimit.innerHTML = `(max app to build: ${limit})`
 
 form.addEventListener('submit', (event)=>{
     event.preventDefault();
     nothingHere.classList.add('hidden')
     const appsCount = appsContainer.childElementCount + 1
-    if (appsCount < 3) {
+    if (appsCount <= limit) {
     console.log(appsCount)
 
     // Create div container
@@ -101,5 +104,25 @@ form.addEventListener('submit', (event)=>{
         input.style.color = "red"
     } 
 })
+
+
+// Creating the clock
+
+const dateToday = document.querySelector("#date-today")
+const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+
+function updateTime() {
+    let today = new Date();
+    let day = days[today.getDay()];
+    let month = today.getMonth();
+    let date = today.getDate();
+    let hour = today.getHours()
+    let min = today.getMinutes()
+    let sec = today.getSeconds();
+    
+    dateToday.innerHTML = `${month}/${date} ${day} ${hour}:${min}:${sec}`
+}
+
+setInterval(updateTime, 1000)
 
 

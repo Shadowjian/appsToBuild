@@ -37,12 +37,13 @@ body {
     background-color: rgba(24,24,24,0.6);
     display: flex;
     width: 60vw;
-    min-height: 50vh;
+    min-height: 60vh;
     min-width: 320px;
     max-width: 744px;
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    padding-top: 40px;
     background-color: rgba(24,24,24,0.6);
     border: solid 1px blanchedalmond;
 }
@@ -117,6 +118,21 @@ body {
     align-self: end;
     font-size: 0.6rem;
     color: orange;
+}
+
+
+
+#date-today {
+    position: absolute;
+    align-self: start;
+    top: 10px;
+    font-size: 0.8rem;
+}
+#max-limit {
+    position: absolute;
+    align-self: end;
+    top: 10px;
+    font-size: 0.8rem;
 }
 
 #quote {
