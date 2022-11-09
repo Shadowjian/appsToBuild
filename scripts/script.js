@@ -87,7 +87,12 @@ form.addEventListener('submit', (event)=>{
         
         newAppBtnDelete.addEventListener('click', ()=>{
             appContainer.remove()
-            console.log(appsCount)
+            if (appsCount <= limit){
+                input.disabled = false
+                btnAdd.disabled = false
+                input.value = ""
+                input.style.color = "white"
+            }
         })
 
     // Reset input value to ""
